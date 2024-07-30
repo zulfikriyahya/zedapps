@@ -32,3 +32,9 @@ Route::get('/raport', function () {
 Route::get('/surat', function () {
     return view('apps/surat/index');
 });
+Route::get('/pembayaran', function () {
+    return view('apps/pembayaran/index');
+});
+Route::get('/koperasi', function () {
+    return view('apps/koperasi/index');
+});
