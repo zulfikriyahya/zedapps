@@ -5,13 +5,13 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Sign in with illustration - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    <title>Login</title>
     <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/tabler-flags.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/tabler-payments.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/tabler-vendors.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/demo.min.css?1692870487" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler-flags.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler-payments.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler-vendors.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/demo.min.css?1692870487") }}" rel="stylesheet"/>
     <style>
       @import url('https://rsms.me/inter/inter.css');
       :root {
@@ -23,19 +23,19 @@
     </style>
   </head>
   <body  class=" d-flex flex-column">
-    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
+    <script src="{{ asset("./dist/js/demo-theme.min.js?1692870487") }}"></script>
     <div class="page page-center">
       <div class="container container-normal py-4">
         <div class="row align-items-center g-4">
           <div class="col-lg">
             <div class="container-tight">
               <div class="text-center mb-4">
-                <a href="." class="navbar-brand navbar-brand-autodark"><img src="./static/logo.svg" height="36" alt=""></a>
+                <a href="." class="navbar-brand navbar-brand-autodark"><img src="{{ asset("./static/logo.svg") }}" height="36" alt=""></a>
               </div>
               <div class="card card-md">
                 <div class="card-body">
                   <h2 class="h2 text-center mb-4">Login to your account</h2>
-                  <form action="./" method="get" autocomplete="off" novalidate>
+                  <form action="{{ url("/") }}" method="get" autocomplete="off" novalidate>
                     <div class="mb-3">
                       <label class="form-label">Email address</label>
                       <input type="email" class="form-control" placeholder="your@email.com" autocomplete="off">
@@ -89,14 +89,14 @@
             </div>
           </div>
           <div class="col-lg d-none d-lg-block">
-            <img src="./static/illustrations/undraw_secure_login_pdn4.svg" height="300" class="d-block mx-auto" alt="">
+            <img src="{{ asset("./static/illustrations/undraw_secure_login_pdn4.svg") }}" height="300" class="d-block mx-auto" alt="">
           </div>
         </div>
       </div>
     </div>
     <!-- Libs JS -->
     <!-- Tabler Core -->
-    <script src="./dist/js/tabler.min.js?1692870487" defer></script>
-    <script src="./dist/js/demo.min.js?1692870487" defer></script>
+    <script src="{{ asset("./dist/js/tabler.min.js?1692870487") }}" defer></script>
+    <script src="{{ asset("./dist/js/demo.min.js?1692870487") }}" defer></script>
   </body>
 </html>

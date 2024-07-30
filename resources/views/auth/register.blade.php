@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Register</title>
     <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/tabler-flags.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/tabler-payments.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/tabler-vendors.min.css?1692870487" rel="stylesheet"/>
-    <link href="./dist/css/demo.min.css?1692870487" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler-flags.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler-payments.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/tabler-vendors.min.css?1692870487") }}" rel="stylesheet"/>
+    <link href="{{ asset("./dist/css/demo.min.css?1692870487") }}" rel="stylesheet"/>
     <style>
       @import url('https://rsms.me/inter/inter.css');
       :root {
@@ -23,15 +23,15 @@
     </style>
   </head>
   <body  class=" d-flex flex-column">
-    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
+    <script src="{{ asset("./dist/js/demo-theme.min.js?1692870487") }}"></script>
     <div class="page page-center">
       <div class="container container-tight py-4">
         <div class="text-center mb-4">
           <a href="." class="navbar-brand navbar-brand-autodark">
-            <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+            <img src="{{ asset("./static/logo.svg") }}" width="110" height="32" alt="Tabler" class="navbar-brand-image">
           </a>
         </div>
-        <form class="card card-md" action="./" method="get" autocomplete="off" novalidate>
+        <form class="card card-md" action="{{ url("/") }}" method="get" autocomplete="off" novalidate>
           <div class="card-body">
             <h2 class="card-title text-center mb-4">Create new account</h2>
             <div class="mb-3">
@@ -56,7 +56,7 @@
             <div class="mb-3">
               <label class="form-check">
                 <input type="checkbox" class="form-check-input"/>
-                <span class="form-check-label">Agree the <a href="./terms-of-service.html" tabindex="-1">terms and policy</a>.</span>
+                <span class="form-check-label">Agree the <a href="{{ url("/terms-of-service") }}" tabindex="-1">terms and policy</a>.</span>
               </label>
             </div>
             <div class="form-footer">
@@ -71,7 +71,7 @@
     </div>
     <!-- Libs JS -->
     <!-- Tabler Core -->
-    <script src="./dist/js/tabler.min.js?1692870487" defer></script>
-    <script src="./dist/js/demo.min.js?1692870487" defer></script>
+    <script src="{{ asset("./dist/js/tabler.min.js?1692870487") }}" defer></script>
+    <script src="{{ asset("./dist/js/demo.min.js?1692870487") }}" defer></script>
   </body>
 </html>
